@@ -1,7 +1,7 @@
 {
  "name": "Français",
  "title": "Atlas de l'Afrique",
- "sub": "54 pays : photos, chiffres clés et conseils de voyage. Projet open source et collaboratif.",
+ "sub": "Jeu de données ouvert sur les 54 pays africains (JSON) : population par genre, PIB, PIB en PPA, langues, monnaie et fuseaux horaires, prêt pour l'analyse de données.",
  "all": "Toutes",
  "regions": {
   "north": "Afrique du Nord",

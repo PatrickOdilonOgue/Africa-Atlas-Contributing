@@ -22,6 +22,18 @@ To publish: GitHub → Settings → Pages → deploy from the main branch. Force
 
 Country and currency names come from the browser (`Intl.DisplayNames`). Photos come from Wikipedia/Wikimedia Commons, flags from flagcdn.com.
 
+## Data analysis
+`data/countries.json` is a flat, language-neutral dataset (units: `pop` in millions, `gdp_bn` and `gdp_ppp_bn` in billions of USD / international dollars, `female_pct` in percent).
+
+```python
+import pandas as pd
+df = pd.read_json("data/countries.json")
+df["female_m"] = df["pop"] * df["female_pct"] / 100
+df["gdp_per_capita_usd"] = df["gdp_bn"] * 1000 / df["pop"]
+print(df.groupby("region")[["pop", "gdp_bn"]].sum())
+df.to_csv("countries.csv", index=False)   # export for Excel, R, Power BI...
+```
+
 ## ⚠️ Data quality
 Figures are **rounded approximations** (2024 orders of magnitude) and need verification against World Bank, IMF, UN and Ethnologue. Female share is mostly an estimate. This is exactly where help is wanted. Travel tips are not official advice: always check your government's travel advisories.
 

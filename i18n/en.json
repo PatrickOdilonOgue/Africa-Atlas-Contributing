@@ -1,7 +1,7 @@
 {
  "name": "English",
  "title": "Africa Atlas",
- "sub": "54 countries: photos, key figures and travel tips. Open source and community-driven.",
+ "sub": "Open dataset on all 54 African countries (JSON): population by gender, GDP, PPP GDP, languages, currency and time zones, ready for data analysis.",
  "all": "All",
  "regions": {
   "north": "North Africa",

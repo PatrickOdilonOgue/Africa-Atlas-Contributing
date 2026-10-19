@@ -1,7 +1,7 @@
 {
  "name": "Deutsch",
  "title": "Afrika-Atlas",
- "sub": "54 Länder: Fotos, Kennzahlen und Reisetipps. Open Source und offen für Beiträge.",
+ "sub": "Offener Datensatz zu allen 54 afrikanischen Ländern (JSON): Bevölkerung nach Geschlecht, BIP, BIP (KKP), Sprachen, Währung und Zeitzonen, bereit für die Datenanalyse.",
  "all": "Alle",
  "regions": {
   "north": "Nordafrika",
